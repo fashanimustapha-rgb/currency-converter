@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محول العملات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>محول العملات</h1>
+
+    <div class="favorites-bar">
+        <button class="favorite-currency" data-currency="USD">USD</button>
+        <button class="favorite-currency" data-currency="EUR">EUR</button>
+        <button class="favorite-currency" data-currency="MAD">MAD</button>
+    </div>
+
+    <div class="converter-box">
+        <div class="input-group">
+            <label for="amount">المبلغ:</label>
+            <input type="number" id="amount" value="1">
+        </div>
+        
+        <div class="input-group">
+            <label for="from_currency">من:</label>
+            <select id="from_currency"></select>
+        </div>
+
+        <button id="swap_button">🔄</button>
+
+        <div class="input-group">
+            <label for="to_currency">إلى:</label>
+            <select id="to_currency"></select>
+        </div>
+
+        <div class="result-box">
+            <p id="result">النتيجة: <span>0</span></p>
+        </div>
+        
+        <button id="convert_button">تحويل</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
